@@ -54,17 +54,19 @@ header p {
 textarea {
     border: none;
     color: #898888;
-    margin-left: 40px;
-    margin-top: 50px;
     max-height: 400px;
     font-size: 18px;
-    width: 500px;
+    width: 90%;
     resize: none;
     outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
 }
 
 hr {
-    width: 500px;
+    width: 90%;
     border: .5px solid #547687;
 }
 
@@ -82,10 +84,9 @@ hr {
 }
 
 #character-count {
-    display: inline-block;
-    margin-top: 0;
+    margin-top: 15px;
     margin-right: 35px;
-    padding-left: 370px;
+    float: right;
 }
 
 #time-line div {
