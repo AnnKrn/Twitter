@@ -8,10 +8,10 @@ var button = document.getElementById('btn')
 //Evento para identificar el click en el formulario del tweet
 addTweet.addEventListener('submit', printTweet);
 
-//Evento para identificar el número de veces que se presiona una tecla
+//Evento para dentificar el número de veces que se presiona una tecla
 textArea.addEventListener('keyup', counter)
 
-//Evento para identificar el click 
+//Evento para identificar el click
 button.addEventListener('click', clearCounter)
 
 //Evento que identifica cambios en la textarea
@@ -35,7 +35,7 @@ function printTweet(e) {
     newTweet.appendChild(tweetText);
     newTweet.appendChild(timeTweet);
     timeLine.prepend(newTweet);
-    textArea.value = '';
+    textArea.value = ''; //preguntar
     button.setAttribute('disabled', 'true');
     button.style.backgroundColor = '#ededed';
 };
@@ -63,7 +63,7 @@ function counter() {
     }
 }
 
-//Función para obtener la hora con formato hh:mm 
+//Función para obtener la hora con formato hh:mm
 function getDate() {
     var time = new Date();
     var hours = time.getHours();
